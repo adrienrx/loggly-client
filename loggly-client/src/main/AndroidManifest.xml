@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.github.tony19.loggly">
+          package="com.github.adrienrx.loggly">
 
   <application
       android:allowBackup="true"

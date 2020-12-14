@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.tony19.loggly;
+package com.github.adrienrx.loggly;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -35,7 +35,7 @@ interface ILogglyRestService {
      * @param token Loggly customer token
      * @param tags CSV of tags
      * @param message log event to be posted
-     * @return result of the post as a {@link com.github.tony19.loggly.LogglyResponse}
+     * @return result of the post as a {@link com.github.adrienrx.loggly.LogglyResponse}
      */
     @POST("inputs/{token}")
     Call<LogglyResponse> log(@Path("token") String token, @Header("X-LOGGLY-TAG") String tags, @Body String message);
@@ -57,7 +57,7 @@ interface ILogglyRestService {
      * @param messages log event messages, each delimited by new-line
      *                 The text is parsed for a log event in each line.
      *                 e.g., "Hello\nWorld" would create two log events.
-     * @return result of the post as a {@link com.github.tony19.loggly.LogglyResponse}
+     * @return result of the post as a {@link com.github.adrienrx.loggly.LogglyResponse}
      */
     @POST("bulk/{token}")
     Call<LogglyResponse> logBulk(@Path("token") String token, @Header("X-LOGGLY-TAG") String tags, @Body String messages);

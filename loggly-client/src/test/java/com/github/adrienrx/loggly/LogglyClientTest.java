@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.tony19.loggly;
+package com.github.adrienrx.loggly;
 
 import retrofit2.Call;
 import org.junit.Before;
@@ -32,7 +32,7 @@ import static org.mockito.Matchers.isNull;
 import static org.mockito.Mockito.mock;
 
 /**
- * Tests {@link com.github.tony19.loggly.LogglyClient}
+ * Tests {@link com.github.adrienrx.loggly.LogglyClient}
  * @author tony19@gmail.com
  */
 @RunWith(MockitoJUnitRunner.class)
